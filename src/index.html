@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/mg-components.esm.js"></script>
+    <script nomodule src="/build/mg-components.js"></script>
+  </head>
+  <body>
+    <mg-drawer drawer-title="Menu">
+      <ul>
+        <li>Item</li>
+        <li>Another Item</li>
+        <li>Yet another item</li>
+      </ul>
+      <mg-tooltip tooltip-info="This is passed via attribute">Left text for the tooltip</mg-tooltip>
+    </mg-drawer>
+    <button>Menu</button>
+    <mg-tooltip tooltip-info="This is passed via attribute">Left text for the tooltip</mg-tooltip>
+  </body>
+
+  <script>
+    const button = document.querySelector('button');
+    const sideDrawer = document.querySelector('mg-drawer');
+    button.addEventListener('click', () => {
+      if (!sideDrawer.opened) {
+        sideDrawer.open();
+      }
+    });
+  </script>
+</html>

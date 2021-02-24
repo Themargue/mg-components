@@ -1,0 +1,22 @@
+#icon {
+  background-color: black;
+  color: white;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.infobox {
+  width: 10rem;
+  height: 3rem;
+  background-color: black;
+  color: white;
+}
